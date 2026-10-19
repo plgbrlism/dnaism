@@ -20,6 +20,7 @@ done
 
 bash "$root/scripts/check-rule-copies.sh" || bad=1
 bash "$root/scripts/check-versions.sh" || bad=1
+bash "$root/scripts/check-skills.sh" || bad=1
 
 (( bad == 0 )) && echo "ok"
 exit $bad

@@ -11,6 +11,7 @@ one-line summary: personal style skills, improved by use, every file follows the
 | skills/<name>/SKILL.md | one skill per folder |
 | harness dirs | generated rule copies and manifests, see docs/agent-portability.md |
 | commands/, .opencode/command/ | slash commands for learn and review |
+| docs/skills.md | add, edit, delete or improve a skill |
 | examples/ | before and after samples of the style |
 | corrections.md | log of agent mistakes and the rule each produced |
 | scripts/, tests/ | sync, check, link helpers and their tests |

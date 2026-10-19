@@ -11,6 +11,8 @@ t=$(mk); ok "$t" "clean repo"
 t=$(mk); python3 -c "open('$t/skills/paul-code/SKILL.md','a').write('x \u2014 y\n')"; bad "$t" "em-dash caught"
 t=$(mk); echo drift >> "$t/.clinerules/dnaism.md"; bad "$t" "stale rule copy caught"
 t=$(mk); sed -i 's/"version": "0.1.0"/"version": "9.9.9"/' "$t/gemini-extension.json"; bad "$t" "version drift caught"
+t=$(mk); sed -i 's/"version": "0.1.0"/"version": "9.9.9"/' "$t/.github/plugin/plugin.json"; bad "$t" "new manifest drift caught"
 t=$(mk); seq 1 120 >> "$t/skills/paul-code/SKILL.md"; bad "$t" "oversize skill caught"
 t=$(mk); sed -i '1d' "$t/skills/paul-docs/SKILL.md"; bad "$t" "missing frontmatter caught"
+t=$(mk); sed -i '/| corrections, improving these skills |/d' "$t/SKILL.md"; bad "$t" "routing table drift caught"
 exit $fail

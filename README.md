@@ -26,5 +26,6 @@ see INSTALL.md for each harness and docs/agent-portability.md for how files map.
 |---|---|
 | log mistakes | corrections.md |
 | show real style | examples/ |
+| manage skills | docs/skills.md |
 | change rules | rules/dnaism.md, then `python3 scripts/sync-rules.py` |
 | check everything | `bash scripts/check.sh`, `bash tests/run.sh` |
