@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 python3 - "$v" <<'PY'
 import json, sys
 v = sys.argv[1]
-for p in ["package.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json", "gemini-extension.json"]:
+for p in ["package.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json", ".qoder-plugin/plugin.json", ".github/plugin/plugin.json", "gemini-extension.json"]:
     d = json.load(open(p))
     d["version"] = v
     json.dump(d, open(p, "w"), indent=2)

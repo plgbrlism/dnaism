@@ -1,0 +1,9 @@
+{
+  "name": "dnaism",
+  "version": "0.1.0",
+  "description": "personal agent skills that encode my coding, docs and ui style",
+  "author": { "name": "paul" },
+  "license": "MIT",
+  "commands": "commands/",
+  "skills": "skills/"
+}

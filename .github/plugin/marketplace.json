@@ -1,0 +1,15 @@
+{
+  "name": "dnaism",
+  "description": "personal agent skills that encode my coding, docs and ui style",
+  "owner": { "name": "paul" },
+  "plugins": [
+    {
+      "name": "dnaism",
+      "description": "personal coding, docs and ui style",
+      "source": "./",
+      "category": "productivity",
+      "commands": "commands/",
+      "skills": "skills/"
+    }
+  ]
+}

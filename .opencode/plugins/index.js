@@ -1,4 +1,4 @@
-// OpenCode 2 loads this file automatically from .opencode/plugins/ and does not
-// read dnaism.mjs next to it, so keep the one-line entry here. npm consumers
-// never see it: package.json main still points at dnaism.mjs.
+// OpenCode 2 loads this file automatically from .opencode/plugins/, so keep the
+// one-line entry here for project auto-load. The global config points straight at
+// dnaism.mjs instead.
 export { default } from './dnaism.mjs'

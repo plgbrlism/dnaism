@@ -11,7 +11,8 @@ one-line summary: pick your harness, placeholders are `<user>` and `<repo-url>`.
 | cline | copy `.clinerules/dnaism.md` |
 | windsurf | copy `.windsurf/rules/dnaism.md` |
 | kiro | copy `.kiro/steering/dnaism.md` |
-| copilot | copy `.github/copilot-instructions.md` |
+| copilot | copy `.github/copilot-instructions.md`, or install the `.github/plugin/` plugin |
+| qoder | copy `.qoder/rules/dnaism.md`, or install the `.qoder-plugin/` plugin |
 | gemini | `gemini extensions install <repo-url>` |
 | opencode | add `<repo>/.opencode/plugins/dnaism.mjs` to the `plugin` array in `opencode.json` (global `~/.config/opencode/opencode.jsonc` to load everywhere) |
 | anything else | paste `rules/dnaism.md` into its rules file |

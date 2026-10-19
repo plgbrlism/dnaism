@@ -10,10 +10,10 @@ one-line summary: one source (rules/dnaism.md), generated copies per harness.
 | cline | `.clinerules/dnaism.md` | yes |
 | windsurf | `.windsurf/rules/dnaism.md` | yes |
 | kiro | `.kiro/steering/dnaism.md` | yes |
-| copilot | `.github/copilot-instructions.md` | yes |
+| copilot | `.github/copilot-instructions.md`, `.github/plugin/` | rules yes, plugin manifest no |
 | gemini | `gemini-extension.json`, `GEMINI.md`, `commands/*.toml` | GEMINI.md yes |
 | opencode | `opencode.json`, `.opencode/command/`, `.opencode/plugins/dnaism.mjs` | plugin registers skills + commands, rules via instructions |
-| qoder | `.qoder/rules/dnaism.md` | yes |
+| qoder | `.qoder/rules/dnaism.md`, `.qoder-plugin/` | rules yes, plugin manifest no |
 | generic agents | `.agents/rules/dnaism.md` | yes |
 
 ## edit flow
