@@ -1,0 +1,14 @@
+{
+  "name": "dnaism",
+  "version": "0.1.0",
+  "private": true,
+  "description": "personal agent skills that encode my coding, docs and ui style",
+  "license": "MIT",
+  "scripts": {
+    "check": "bash scripts/check.sh",
+    "sync": "python3 scripts/sync-rules.py",
+    "test": "bash tests/run.sh && node --test tests/plugin.test.mjs",
+    "link": "bash scripts/link-skills.sh",
+    "list": "bash scripts/list-skills.sh"
+  }
+}

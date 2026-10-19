@@ -1,0 +1,2 @@
+description = "review code as a severity table"
+prompt = """load skills/paul-review/SKILL.md and review: {{args}}"""

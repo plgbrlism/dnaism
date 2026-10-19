@@ -1,0 +1,7 @@
+{
+  "name": "dnaism",
+  "owner": { "name": "paul" },
+  "plugins": [
+    { "name": "dnaism", "source": "./", "description": "personal agent skills that encode my coding, docs and ui style" }
+  ]
+}
