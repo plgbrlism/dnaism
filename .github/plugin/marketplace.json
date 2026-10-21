@@ -1,10 +1,10 @@
 {
-  "name": "dnaism",
+  "name": "yap",
   "description": "personal agent skills that encode my coding, docs and ui style",
   "owner": { "name": "paul" },
   "plugins": [
     {
-      "name": "dnaism",
+      "name": "yap",
       "description": "personal coding, docs and ui style",
       "source": "./",
       "category": "productivity",

@@ -1,9 +1,9 @@
 ---
-name: dnaism
-description: Root personal style skill. Load for any coding, docs, ui, git, review or research task. Holds global rules and routes to the matching paul-* sub-skill.
+name: yap
+description: Root personal style skill. Load for any coding, docs, ui, git, review or research task. Holds global rules and routes to the matching yap-* sub-skill.
 ---
 
-# dnaism
+# yap
 
 ## routing
 
@@ -11,20 +11,20 @@ load the matching sub-skill, then follow it. more than one can apply.
 
 | task | skill |
 |---|---|
-| any code | `paul-code` |
-| rust | `paul-rust` |
-| python | `paul-python` |
-| bash | `paul-bash` |
-| c | `paul-c` |
-| markdown, readmes, docs | `paul-docs` |
-| web, compose, tui, egui, quickshell ui | `paul-ui` |
-| git, commits, prs, planning | `paul-workflow` |
-| review, critique, debug | `paul-review` |
-| search, research, summaries | `paul-research` |
-| corrections, improving these skills | `paul-learn` |
+| any code | `yap-code` |
+| rust | `yap-rust` |
+| python | `yap-python` |
+| bash | `yap-bash` |
+| c | `yap-c` |
+| markdown, readmes, docs | `yap-docs` |
+| web, compose, tui, egui, quickshell ui | `yap-ui` |
+| git, commits, prs, planning | `yap-workflow` |
+| review, critique, debug | `yap-review` |
+| search, research, summaries | `yap-research` |
+| corrections, improving these skills | `yap-learn` |
 
 <!-- rules:start -->
-one-line goal: minimal, performant, adaptive output in paul's style, no generic filler.
+one-line goal: minimal, performant, adaptive output in your personal style, no generic filler.
 
 ## global
 
@@ -62,5 +62,5 @@ one-line goal: minimal, performant, adaptive output in paul's style, no generic 
 
 ## skills
 
-harnesses with skill support load skills/<name>/SKILL.md for the task (paul-code, paul-rust, paul-python, paul-bash, paul-c, paul-ui, paul-docs, paul-workflow, paul-review, paul-research, paul-learn).
+harnesses with skill support load skills/<name>/SKILL.md for the task (yap-code, yap-rust, yap-python, yap-bash, yap-c, yap-ui, yap-docs, yap-workflow, yap-review, yap-research, yap-learn).
 <!-- rules:end -->

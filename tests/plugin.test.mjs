@@ -4,9 +4,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import plugin from '../.opencode/plugins/dnaism.mjs';
+import plugin from '../.opencode/plugins/yap.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const rootName = fs.readFileSync(path.join(root, 'SKILL.md'), 'utf8').match(/^name: (.+)$/m)[1].trim();
+const commandNames = fs.readdirSync(path.join(root, '.opencode/command'))
+  .filter((f) => f.endsWith('.md')).map((f) => path.basename(f, '.md')).sort();
 
 function fakeV2() {
   const skills = [];
@@ -21,7 +24,7 @@ function fakeV2() {
 }
 
 test('single default export with id and both APIs', () => {
-  assert.equal(plugin.id, 'dnaism');
+  assert.equal(plugin.id, rootName);
   assert.equal(typeof plugin.setup, 'function');
   assert.equal(typeof plugin.server, 'function');
 });
@@ -38,17 +41,17 @@ test('v2 setup registers every skill dir', async () => {
   }
 });
 
-test('v2 setup registers both commands', async () => {
+test('v2 setup registers every command', async () => {
   const { ctx, commands } = fakeV2();
   await plugin.setup(ctx);
   const names = commands.map((c) => c.name).sort();
-  assert.deepEqual(names, ['dnaism-learn', 'dnaism-review']);
+  assert.deepEqual(names, commandNames);
 });
 
 test('command execute fills $ARGUMENTS', async () => {
   const { ctx, commands, prompts } = fakeV2();
   await plugin.setup(ctx);
-  const review = commands.find((c) => c.name === 'dnaism-review');
+  const review = commands.find((c) => c.name === rootName + '-review');
   await review.execute({ sessionID: 's1', prompt: { text: 'feature/login', files: [{ mention: 'x', path: 'a' }] } });
   assert.equal(prompts.length, 1);
   assert.match(prompts[0].text, /feature\/login/);
@@ -59,6 +62,6 @@ test('v1 config hook adds commands and skills path', async () => {
   const hooks = await plugin.server({ client: {} });
   const config = {};
   await hooks.config(config);
-  assert.ok(config.command['dnaism-learn']);
+  assert.ok(config.command[rootName + '-learn']);
   assert.ok(config.skills.paths.includes(path.join(root, 'skills')));
 });

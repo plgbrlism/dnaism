@@ -1,5 +1,5 @@
 {
-  "name": "dnaism",
+  "name": "yap",
   "version": "0.1.0",
   "description": "personal agent skills that encode my coding, docs and ui style",
   "author": { "name": "paul" },
@@ -7,14 +7,14 @@
   "keywords": ["style", "skills", "minimalism", "docs", "ui"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "dnaism",
+    "displayName": "yap",
     "shortDescription": "personal coding, docs and ui style",
     "longDescription": "One source of rules shipped to every harness: minimal, performant, adaptive output, table-first, no filler.",
     "developerName": "paul",
     "category": "Productivity",
     "capabilities": ["Instructions"],
     "defaultPrompt": [
-      "Follow my dnaism style for this task.",
+      "Follow my yap style for this task.",
       "Review this code against my style.",
       "Apply my docs style to this doc."
     ]

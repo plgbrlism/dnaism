@@ -1,2 +1,0 @@
-description = "turn a correction into a rule"
-prompt = """load skills/paul-learn/SKILL.md and apply it to this correction: {{args}}"""

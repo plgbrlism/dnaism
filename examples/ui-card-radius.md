@@ -2,7 +2,7 @@
 
 one-line summary: flat tonal card with the diagonal radius.
 
-| generic | dnaism |
+| generic | yap |
 |---|---|
 | border, shadow, uniform radius | no border, tonal fill, tl 4 tr 12 br 4 bl 12 |
 

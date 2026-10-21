@@ -2,7 +2,7 @@
 
 one-line summary: timestamped copy of a path.
 
-| generic | dnaism |
+| generic | yap |
 |---|---|
 | 40 lines, functions, usage text, color output | 4 lines |
 

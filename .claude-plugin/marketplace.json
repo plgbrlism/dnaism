@@ -1,7 +1,7 @@
 {
-  "name": "dnaism",
+  "name": "yap",
   "owner": { "name": "paul" },
   "plugins": [
-    { "name": "dnaism", "source": "./", "description": "personal agent skills that encode my coding, docs and ui style" }
+    { "name": "yap", "source": "./", "description": "personal agent skills that encode my coding, docs and ui style" }
   ]
 }

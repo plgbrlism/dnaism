@@ -1,7 +1,7 @@
-<!-- generated from rules/dnaism.md, edit the source and run scripts/sync-rules.py -->
-# dnaism rules
+<!-- generated from rules/yap.md, edit the source and run scripts/sync-rules.py -->
+# yap rules
 
-one-line goal: minimal, performant, adaptive output in paul's style, no generic filler.
+one-line goal: minimal, performant, adaptive output in your personal style, no generic filler.
 
 ## global
 
@@ -39,4 +39,4 @@ one-line goal: minimal, performant, adaptive output in paul's style, no generic 
 
 ## skills
 
-harnesses with skill support load skills/<name>/SKILL.md for the task (paul-code, paul-rust, paul-python, paul-bash, paul-c, paul-ui, paul-docs, paul-workflow, paul-review, paul-research, paul-learn).
+harnesses with skill support load skills/<name>/SKILL.md for the task (yap-code, yap-rust, yap-python, yap-bash, yap-c, yap-ui, yap-docs, yap-workflow, yap-review, yap-research, yap-learn).

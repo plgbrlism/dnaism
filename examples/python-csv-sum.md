@@ -2,7 +2,7 @@
 
 one-line summary: sum the second column of a csv.
 
-| generic | dnaism |
+| generic | yap |
 |---|---|
 | class, argparse, docstrings, pandas import | one expression, stdlib only |
 
